@@ -42,7 +42,7 @@ The Edge Browser Control has no `Object` property and no MSHTML document. Common
 | `Me.wb.Object.Busy` / `ReadyState` | `Me.wb.ReadyState`, or the `DocumentComplete` event |
 | `Me.wb.Object.ExecWB` (print, copy) | no direct equivalent; use `ExecuteJavascript "window.print()"` |
 
-Local files and non-HTTPS pages need the Edge control's `TrustedDomains` property set. Method reference: [EdgeBrowserControl](https://learn.microsoft.com/office/vba/api/access.edgebrowsercontrol).
+Local files and non-HTTPS pages need the Edge control's `TrustedDomains` property set, and paths to local files must be prefixed with `https://msaccess.localhost`. Method reference: [EdgeBrowserControl](https://learn.microsoft.com/office/vba/api/access.edgebrowsercontrol).
 
 ## Status
 
